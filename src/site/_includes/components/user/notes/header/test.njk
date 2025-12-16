@@ -1,7 +1,10 @@
 {%- for note in collections.note -%}
-<div class="foobar" data-callout="info">
-    <pre>bla bla bla {{ note.data }} </pre>
-</div>
+  {%- if note.filePathStem == page.filePathStem -%}
+    <div class="foobar" data-callout="info">
+      <pre>{{ note.data | dump }}</pre>
+    </div>
+  {%- endif -%}
 {%- endfor -%}
+
 
 
