@@ -1,5 +1,5 @@
-{%- for note in collections.note -%}
-    <div class="foobar" data-callout="info">
-        <pre>{{ userComputed }}</pre>
-    </div>  
-{%- endfor -%}
+<div class="foobar" data-callout="info">
+    <pre>{{ JSON.stringify(userComputed, null, 2) }}</pre>
+</div>
+
+
