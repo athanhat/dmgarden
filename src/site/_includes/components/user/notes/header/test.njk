@@ -1,5 +1,5 @@
 {%- for note in collections.note -%}
     <div class="foobar" data-callout="info">
-        <pre>{{ note.data | json }}</pre>
+        <pre>{{ userComputed | json }}</pre>
     </div>  
 {%- endfor -%}
